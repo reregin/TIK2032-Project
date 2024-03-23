@@ -6,26 +6,35 @@
     <title>Regina George's Site</title>
     <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
 </head>
-<body>
-    <header>
-        <h1>Welcome to Regina George's Personal Website</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/gallery.html">Gallery</a></li>
-            <li><a href="pages/blog.html">Blog</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
+<body style="background-color: #F4EEE8;">
+    <nav style="background-color: #D0E1EB; padding: 20px;">
+        <ul style="display: flex; justify-content: center; list-style: none; margin-top: 0.1px; margin-bottom: 0.1px;">
+            <li style="margin-right: 10px;"><a href="index.html">Home</a></li>
+            <li style="margin-right: 10px;"><a href="pages/gallery.html">Gallery</a></li>
+            <li style="margin-right: 10px;"><a href="pages/blog.html">Blog</a></li>
+            <li style="margin-right: 10px;"><a href="pages/contact.html">Contact</a></li>
         </ul>
+    </nav>
 
     <main>
-        <h2>About Me</h2>
-        <blockquote>
-            "No greater force for change exists than the people we surround ourselves with."
-            — Justin Blaney.
-        </blockquote>
-        <p>Starting career with love and passion in the IT industry. Currently am interested to learn more on Machine Learning, Web Development, Mobile Development, and Game Development. Also love filmmaking and editing as a hobby. Driven by commitment to greater outcome whether through collaborating with a team or working on a solo. Being part of a team is good to learn from others, share insights, and contribute to achieving common goals. While working independently gives personal space to dive deep into problems and bring unique vision to life.</p>
+        <div style="background-color: #325288; padding: 10px;">
+            <h1><span style="color: white;">Welcome to </span><span style="color: #FFD700;">Regina George's</span><span style="color: white;"> Zone</span></h1>
+            <h3 style="color: white;">Beyond the map, lies exploration.</h3>
+        </div>  
+
+        <div style="display: flex; gap: 10px; max-width: 75%;">
+            <div style="flex: 1;">
+                <img src="assets\images\me-1.png" alt="Profile" style="width: 60%; height: auto; float: right;">
+            </div>
+            <div style="flex: 1;">
+                <h2>About Me</h2>
+                <blockquote style="background-color: #ACC8D3; padding: 15px; border-radius: 5px;">
+                    "No greater force for change exists than the people we surround ourselves with."
+                    — Justin Blaney.
+                </blockquote>
+                <p style="text-align: justify;">Starting career with love and passion in the IT industry. Currently am interested to learn more on Machine Learning, Web Development, Mobile Development, and Game Development. Also love filmmaking and editing as a hobby. Driven by commitment to greater outcome whether through collaborating with a team or working on a solo. Being part of a team is good to learn from others, share insights, and contribute to achieving common goals. While working independently gives personal space to dive deep into problems and bring unique vision to life.</p>
+            </div>
+        </div>
         <!--
         <h2>Projects</h2>
         <p>Here are some of the projects I have worked on:</p>
@@ -37,7 +46,7 @@
         -->
     </main>
 
-    <footer>
+    <footer style="text-align: center; color: #325288;">
         <p>&copy; 2024 Regina George's Personal Website.</p>
     </footer>
 </body>
