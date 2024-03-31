@@ -1,65 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body style="background-color: #F4EEE8; font-family: Georgia,serif;">
 
-    <nav style="background-color: #D0E1EB; padding: 20px;">
-        <ul style="display: flex; justify-content: space-between; list-style: none; margin-top: 0.1px; margin-bottom: 0.1px;">
-            <li style="margin-right: 10px;"><a href="../index.html">Home</a></li>
-            <li style="margin-right: 10px;"><a href="gallery.html">Gallery</a></li>
-            <li style="margin-right: 10px;"><a href="blog.html">Blog</a></li>
-            <li style="margin-left: auto;" type="button"><a href="#footer">Contact</a></li>
-            <li style="margin-left: 25px;">⚘</li>
+<body class="gallery-page">
+    <nav id="gallery-nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li type="button"><a href="#footer">Contact</a></li>
+            <li>⚘</li>
         </ul>
     </nav>
 
     <main>
-        <div style="background-color: #325288; padding: 10px; padding-left: 50px;">
-            <h1 style="color: white;">Gallery</h1>
-        </div>  
-        <h2 style="text-align: center; text-shadow: 0 0 10px #325288;">UNSRAT IT Community</h2>
-        
-        <h3 style="text-align: center;">TechoFest 2023</h3>
-        <div class="gallery" style="display: flex; justify-content: center;">
-            <div class="image" style="margin-right: 10px; background-color: white; padding: 5px; border-radius: 5px;">
-                <img src="../assets/images/techofest-1.jpg" alt="TechoFest" style="max-width: 25vw; height: auto;">
-                <div class="caption" style="text-align: center;">Last day with Deepfake Team</div>
-                <br>
-            </div>
-            <div class="image" style="margin-right: 10px; background-color: white; padding: 5px; border-radius: 5px;">
-                <img src="../assets/images/techofest-2.jpg" alt="TechoFest" style="max-width: 33vw; height: auto;">
-                <div class="caption" style="text-align: center;">Demo day</div>
-            </div>
+        <div id="gallery-title">
+            <h1>Gallery</h1>
         </div>
 
-        <h3 style="text-align: center;">Divisions</h3>
-        <div class="gallery" style="display: flex; justify-content: center;">
-            <div class="image" style="margin-right: 10px; background-color: white; padding: 5px; border-radius: 5px;">
-                <img src="../assets/images/unity-1.jpg" alt="Weekly Meeting" style="max-width: 25vw; height: auto;">
-                <div class="caption" style="text-align: center;">Mobile Development Weekly Meeting</div>
-                <br>
-            </div>
-            <div class="image" style="margin-right: 10px; background-color: white; padding: 5px; border-radius: 5px;">
-                <img src="../assets/images/unity-2.jpg" alt="Weekly Meeting" style="max-width: 25vw; height: auto;">
-                <div class="caption" style="text-align: center;">Cloud Computing Weekly Meeting</div>
-                <br>
+        <div id="gallery-content">
+            <img src="..\assets\images\landscape.png" alt="landscape" style="margin: 0; display: block;">
+            <h2 style="text-align: center; color: #FFD700;">UNSRAT IT Community</h2>
+            <div class="pictures">
+                <div class="image">
+                    <img src="../assets/images/techofest-1.jpg" alt="TechoFest">
+                    <div class="caption">TechoFest 2023 — Deepfake Team</div>
+                </div>
+                <div class="image">
+                    <img src="../assets/images/techofest-2.jpg" alt="TechoFest">
+                    <div class="caption">TechoFest 2023 — Demo Day</div>
+                </div>
+                <div class="image">
+                    <img src="../assets/images/unity-1.jpg" alt="Weekly Meeting">
+                    <div class="caption">Divisions Meeting — Mobile Development</div>
+                </div>
+                <div class="image">
+                    <img src="../assets/images/unity-2.jpg" alt="Weekly Meeting">
+                    <div class="caption">Divisions Meeting — Cloud Computing</div>
+                </div>
             </div>
         </div>
+        
+        <div id="gallery-divider"></div>
+
+        <div id="gallery-content-2">
+            <h2 style="text-align: center; color: #735A56;">More About Me</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../assets/images/me-5.jpg" alt="More About Me">
+                </div>
+                <div class="grid-item">
+                    <img src="../assets/images/me-3.jpg" alt="More About Me">
+                </div>
+                <div class="grid-item">
+                    <img src="../assets/images/me-4.jpg" alt="More About Me">
+                </div>
+                <div class="grid-item">
+                    <img src="../assets/images/me-2.jpg" alt="More About Me">
+                </div>
+                <div class="grid-item">
+                    <img src="../assets/images/me-6.jpg" alt="More About Me">
+                </div>
+                <div class="grid-item">
+                    <img src="../assets/images/me-7.jpg" alt="More About Me">
+                </div>
+            </div>
         <br><br><br>
+        </div>
     </main>
 
-    <footer id="footer" style="text-align: center; background-color: #F5CEBE; color: black; padding: 0.1px;">
+    <footer id="footer">
         <ul style="list-style: none; display:flex; justify-content: center; text-align: center;">
-            <li style="margin-right: 150px;"><a href="https://www.linkedin.com/in/regina-george/" style="color: black;">LinkedIn</a></li>
-            <li style="margin-right: 100px;"><a href="mailto:reginageo22@gmail.com" style="color: black;">reginageo22@gmail.com</a></li>
-            <li style="margin-left: 100px;"><a href="https://github.com/reregin" style="color: black;">GitHub</a></li>
+            <li style="margin-right: 150px;"><a href="https://www.linkedin.com/in/regina-george/">LinkedIn</a></li>
+            <li style="margin-right: 100px;"><a href="mailto:reginageo22@gmail.com">reginageo22@gmail.com</a></li>
+            <li style="margin-left: 100px;"><a href="https://github.com/reregin">GitHub</a></li>
         </ul>
-        <p style="color: black;">&copy; 2024 Regina George's Personal Website.</p>
+        <p>&copy; 2024 Regina George's Personal Website.</p>
     </footer>
 </body>
+
 </html>
