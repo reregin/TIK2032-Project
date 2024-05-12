@@ -5,3 +5,4 @@ Repositori ini akan memuat setiap tahapan project dari HTML hingga selesai.
 Project atau branch yang telah dibuat:
 - Tugas-html
 - Tugas-css
+- Tugas-js
