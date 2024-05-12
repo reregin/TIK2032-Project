@@ -4,7 +4,7 @@ body {
     font-family: Georgia, serif;
     margin: 0;
     padding: 0;
-}
+}  
 
 /* Navigation Bar Styles */
 nav {
@@ -12,6 +12,7 @@ nav {
     align-self: flex-start;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 nav ul {
     display: flex;
@@ -66,6 +67,35 @@ nav li:nth-last-child(2) {
     justify-content: center;
     flex-direction: column;
 }
+#index-title .underline {
+    position: relative;
+}
+#index-title .underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+#index-title .underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+@keyframes colorChange {
+    0% { color: white; text-shadow: 0 0 5px rgba(255, 255, 255, 0.35); }  
+    35% { color: #D0E1EB; text-shadow: 0 0 5px rgba(208, 225, 235, 0.35); }  
+    50% { color: #F4EEE8; text-shadow: 0 0 5px rgba(244, 238, 232, 0.35); }  
+    75% { color: #e7ebd0; text-shadow: 0 0 5px rgba(231, 235, 208, 0.35); } 
+    100% { color: white; text-shadow: none; }  
+}  
+#index-title #tagline {
+    animation: colorChange 8s infinite;
+}
 
 /* Index Second Section */
 .about-title {
@@ -93,6 +123,13 @@ nav li:nth-last-child(2) {
     padding: 0;
     margin: 0;
 }
+.projects li {
+    opacity: 0;  
+    transition: opacity 0.5s ease-in-out;  
+  }
+.projects li.fade-in {
+    opacity: 1;  
+}  
 .project1, .project2, .project3, .project4 {
     text-align: center;
     padding: 10px;
@@ -168,6 +205,10 @@ nav li:nth-last-child(2) {
     color: #FFD700;
     padding: 10px;
 }
+
+
+
+  
 
 /* Gallery Third Section */
 #gallery-divider {
