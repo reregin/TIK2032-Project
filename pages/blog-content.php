@@ -1,18 +1,14 @@
 <?php
-// Include the database connection
-include 'db_connection.php';
+include '../db_connection.php';
 
-// Get the blog ID from the URL
 $blogId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-// Fetch the blog data based on the ID
 $sql = "SELECT * FROM blog WHERE id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $blogId);
 $stmt->execute();
 $result = $stmt->get_result();
 
-// Check if the blog post exists
 if ($result->num_rows > 0) {
     $blog = $result->fetch_assoc();
 } else {
@@ -20,7 +16,6 @@ if ($result->num_rows > 0) {
     exit;
 }
 
-// Close the database connection
 $conn->close();
 ?>
 
